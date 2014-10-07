@@ -2,6 +2,12 @@
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 
+\usepackage{textcomp}
+\usepackage{vmargin}
+\usepackage{graphicx}
+\usepackage{setspace}
+\setmarginsrb{3.0cm}{3.0cm}{3.0cm}{3.0cm}{1.0cm}{0.5cm}{1.0cm}{1.0cm}
+
 \begin{document}
 
 
@@ -11,7 +17,7 @@
 %                               Table of Contents                              %
 % ---------------------------------------------------------------------------- %
 
-\tableofcontents*
+\tableofcontents
 
 % ---------------------------------------------------------------------------- %
 %                              Internal Structure                              %
@@ -20,6 +26,11 @@
 \clearpage
 
 \input{src/intro}
+\input{src/glossaire}
+\input{src/systeme}
+\input{src/besoins}
+\input{src/contraintes}
+\input{src/reponses}
 
 
 % ---------------------------------------------------------------------------- %
@@ -27,7 +38,7 @@
 % ---------------------------------------------------------------------------- %
 
 
-\label{Bibliography}
+\label{Bibliographie}
 \bibliography{bib/biblio}
 
 \end{document}
