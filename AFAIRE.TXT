@@ -74,7 +74,10 @@
 		* stream vidéo à la demande de l'utilisateur (option)
 
 
+################## EE ##################
 
-
+> Energie renouvelable
+	- Capteurs autonomes en énergie (au maximum)
+	- Récupération / stockage énergie
 
 
