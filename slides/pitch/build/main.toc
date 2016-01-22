@@ -1,7 +1,0 @@
-\beamer@endinputifotherversion {3.33pt}
-\select@language {french}
-\beamer@sectionintoc {1}{E-protect}{3}{0}{1}
-\beamer@sectionintoc {2}{Etat de l'art}{5}{0}{2}
-\beamer@sectionintoc {3}{Notre projet}{8}{0}{3}
-\beamer@sectionintoc {4}{Nos innovations}{11}{0}{4}
-\beamer@sectionintoc {5}{Valorisation concours}{17}{0}{5}
