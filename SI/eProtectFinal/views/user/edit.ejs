@@ -1,0 +1,28 @@
+	<div class="container">  
+
+	<form action="/user/update/<%= user.id %>" method="POST" class="form-signin">
+		<h2> Hey, you're editing a user... </h2>
+
+		<input value="<%= user.firstName %>" name="firstName" type="text" class="form-control"/>
+		<input value="<%= user.lastName %>" name="lastName" type="text" class="form-control"/>
+		<input value="<%= user.email %>" name="email" type="text" class="form-control"/>
+		<input value="<%= user.tel %>" name="tel" type="text" class="form-control"/>
+		<input value="<%= user.street %>" name="street" type="text" class="form-control"/>
+		<input value="<%= user.city %>" name="city" type="text" class="form-control"/>
+		<input value="<%= user.postCode %>" name="postCode" type="text" class="form-control"/>
+		<input value="<%= user.sigfox %>" name="sigfox" type="text" class="form-control"/>
+
+		<% if (session.authenticated && session.User.isAdmin) { %>
+			<% if (user.isAdmin) { %>
+				<input type="hidden" name="isAdmin" value="checked">
+				<label class="checkbox"><input type="checkbox" name="isAdmin" checked> Admin</label>
+			<% } else { %>
+				<input type="hidden" name="isAdmin" value="unchecked">
+				<label class="checkbox"><input type="checkbox" name="isAdmin"> Admin</label>
+			<% } %> 
+		<% } %> 
+		<input type="submit" value="Proceed" class="btn btn-lg btn-primary btn-block"/>
+		<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+	</form>
+
+</div>

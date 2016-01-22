@@ -1,0 +1,74 @@
+\chapter{Solutions proposées :}
+
+\section{Innovations majeures :}
+
+\subsection{Choix du protocole 6LoWPan allégée 96 octets sur UDP (User Datagram Protocol) :}
+
+\begin{itemize}
+	\item E-protect travail sur un réseau meshé interne qui ne necessite pas énormément de données mais suffisament pour transmettre les données issues des caméras de surveillance.
+	\item Pour toute modification de configuration du système d'alarme, 6LoWPan permet à une machine nouvellement connectée au réseau de s'autoconfigurer soit déterminer son adresse lien local et vérifier son unicité. De plus ce protocole présente des avantages certains concernant :
+	\begin{itemize}
+		\item L'intéropérabilité extensive (wifi, ethernet, GPRS, ATM)
+		\item La sécurité (authentification, pare-feux)
+		\item Les services réseaux de haut niveau (équilibrage de la charge, cache, mobilité, NAT)
+		\item L'adressage et routage
+		\item Les services applicatifs de haut niveaux (HTTP,XML,SOAP,REST)
+		\item Les outils de supervision réseaux
+		\item Délai de transmission plus court, du à l’utilisation d’un routage Mesh Under (décision de routage fait au niveau du 6 LoWPan et seulement avec les fragments du paquets IPv6 reconstitué uniquement dans l'équipement destinataire)\cite{www:6LoWPan}\\
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Système de Back-up :}
+
+E-protect assure le fonctionnement du système en cas de coupure de courant en basculant l'installation en fonctionnement Back-up.\\
+
+\subsubsection{Alimentation}
+L'ensemble du système se place en fonctionnement basse consommation. Seules les fonctions principales restent actives (écran et rasberry se désactivent).\\
+L'alimentation générale se fait par déchargement de batterie assurant le fonctionnement de l'ensemble du système 48h durant. Branché au secteur, la batterie utilisée se charge en fonctionnement normal.\\
+
+\subsubsection{Communication}
+Utilisation de la communication SigFox ( protocole intégré à la base) : permet d’alerter le client en cas de coupure d’électricité ou de connexion internet.\\
+SIGFOX utilise UNB (Ultra Narrow Band) basé sur une technologie radio pour connecter des périphériques à son réseau mondial.
+Le réseau fonctionne dans les bandes ISM (bandes de fréquences sans licence) disponibles mondialement et coexistent sur ces fréquences avec d'autres technologies radio, mais sans aucun risque de collision ou de problèmes de capacité.\\
+Avantage de ce protocole : SIGFOX est compatible avec les émetteurs-récepteurs existants et activement transféré vers un nombre de plateformes techniques.\cite{www:Sigfox}\\
+
+
+
+\subsection{Sécurisation des données :} 
+
+Le 6LoWPan permet de garantir la sécurité (confidentialité et intégrité) des données et la disponibilité du réseau.
+Afin de répondre aux attaques externes actives tel que la paralysation du réseau par brouillage du signal radio, E-protect renforce la sécurités de ses données par l'optimisation du cryptage.\\
+Pour cela l'algorithme AES 128 est utilisé pour sécuriser la couche liaison (MAC). Cet algorithme rend des méthodes de brouillage classique tels que la cryptanalyse linéaire ou différentielle extremement difficile.\\
+
+
+\subsection{Alimentation du système :} 
+
+\textbf{Utilisation de Witricity, modèle WIT-5000 :} 
+\begin{itemize}
+\item Cette méthode repose sur la conversion d’énergie de radiations microondes directionnelles, limitant les risques sur la santé et la sécurité, en énergie électrique continue.
+\item Il s’agit d’un système de filtrage et d’un redresseur, basé sur l’association originale d’un système passif d’adaptation d’impédance optimisé et d’un convertisseur spécifique.
+\item Ce système à une durée de vie illimité.
+\item Conçu avec la spécification Rezence pour l'électronique grand public. Il fonctionne à 6,78 MHz, une fréquence de fonctionnement qui est adoptée pour les applications électronique grand public. A cette fréquence, conçu pour respecter les limites applicables d'exposition humaine, l’interaction avec des corps étrangers métalliques est minimale.
+\item L'utilisation de Bluetooth LE pour le contrôle du système, permet au Wit-5000 de tirer parti de l'infrastructure de communication existante qui peut déjà être en place dans les dispositifs de consommateurs (smartphones, tablettes, ordinateurs personnels).\cite{www:Witricity}\\
+\end{itemize}
+
+
+\subsection{Gérer la consommation du système :}
+
+Reposant sur un réseau meshé et une technologie de capteur innovante, le système E-protect travaille sur des communications (capteurs/capteur, capteur/base) de faibles portées. Une économie d'énergie consommée conséquente est réalisée par diminution d'appelles de puissance.
+
+
+
+\section{Systéme d'information}
+
+\subsection{Besoins fonctionnels en Front Office}
+
+Notre site web à pour objectif d’être consulté par l'utilisateur afin qu'il puisse avoir un état des capteurs qui sont chez lui. Dans ce but il faut qu'en cas d’alerte il puisse se connecter de n'importe quel périphérique, portable , tablette ou ordinateur, nous avons donc besoin d'un site web adaptatif (responsive design).\\
+Nous optons pour le framework css/html bootstrap. Dans le but de rendre le site le plus simple possible pour l’utilisateur se traduisant par la présence de toutes les actions sur la page utilisateur.\\
+
+\subsection{Besoins fonctionnels en Back Office}
+Pour la communication entre les bases et le serveur nous utilisons la technologie des socket qui représente l’avantage de ne pas être à sens unique et qui permet de savoir quand la connexion est perdu, contrairement aux simples requetes http.\\
+Le framework, sailsjs, ne pouvant pas gérer les sockets tcp (ceux utilisé par la raspberrypi) nous obtons pour un bridge via un serveur node qui communique à la fois avec la raspberrypi et le serveur web en utilisant socketio. Nous nous imposons d’utiliser une base de donnée NoSQL et avons choisi MongoDb.\\
+
+Afin de notifier l'utilisateur, l'utilisation de l’API Twilio permet d'envoyer une alerte par message telephonique.\\

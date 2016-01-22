@@ -1,0 +1,422 @@
+<script type="text/javascript">
+window.onload = function subscribeAndListen(){
+    // When the document loads, send a request to users.testSocket
+    // The controller code will subscribe you to all of the 'users' model instances (records)
+    io.socket.get('/sigfox/subscribe');
+
+    // Listen for the event called 'user'
+    io.socket.on('sigfox',function(obj){
+   		 if (obj.verb == 'created') alert('base created');
+   		 if (obj.verb == 'updated') alert('base updated');
+    });
+        io.socket.on('device',function(obj){
+   		if (obj.verb == 'created') alert('device created');
+   		if (obj.verb == 'updated') alert('device updated');
+    });
+};
+
+
+</script>
+
+
+    <div class="nav-side-menu">
+        <div class="brand"><h3>Gustave Zouglou</h3></div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="brand" align="center"> <img alt="User Pic" src="img/photo.png" class="img-circle"> </div>
+        </br>
+
+
+
+        <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+
+                <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                    <a href="#"><i class="fa fa-spinner fa-spin"></i> Base 1 <i class="fa fa-arrow-right"></i></a>
+                </li>
+                <li data-toggle="collapse" data-target="#products2" class="collapsed active">
+                    <a href="#"><i class="fa fa-spinner fa-spin"></i> Base 2 <i class="fa fa-arrow-right"></i></a>
+                </li>
+                <!--<ul class="sub-menu collapse" id="products">
+                    <li class="active"><a href="#">Base 1</a></li>
+                    <li><a href="#">Base 2</a></li>
+                    <li><a href="#">Base 2</a></li>
+                    <li><a href="#">Base 2</a></li>
+                    <li><a href="#">Base 2</a></li>
+                </ul>-->
+
+           </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+
+</br></br></br>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Gustave Zouglou</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                        <tr>
+                                            <td>Début de contrat :</td>
+                                            <td>06/23/2013</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Adresse :</td>
+                                            <td>123 rue du codage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email :</td>
+                                            <td><a href="mailto:info@support.com">zouglou@gmail.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Téléphone :</td>
+                                            <td>01 23 45 67 89</td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                                <a href="#" class="btn btn-primary">Mon contrat</a>
+                                <a href="#" class="btn btn-primary">Modifier mon profil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </br>
+
+
+    <div class="container">
+
+
+        <ul class="sub-menu collapse" id="products">
+
+            <div class="row">
+                <strong><h1>Base 1</h1></strong>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-red">
+                        <div class="panel-heading  text-center">
+                            <img src="img/cam.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Garage</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-green">
+                        <div class="panel-heading  text-center">
+                            <img src="img/chock.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Entrée</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Entrée</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Chambre Alphonse</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Chambre Gustave</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-red">
+                        <div class="panel-heading  text-center">
+                            <img src="img/cam.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Cuisine</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Salle de bain</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+        </ul>
+
+    </div>
+
+
+
+
+    <div class="container">
+
+
+        <ul class="sub-menu collapse" id="products2">
+            <div class="row">
+                <strong><h1>><font color="000000">Base 2</h1></strong>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-red">
+                        <div class="panel-heading  text-center">
+                            <img src="img/cam.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Garage</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-green">
+                        <div class="panel-heading  text-center">
+                            <img src="img/chock.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Entrée</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Entrée</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Chambre Alphonse</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Chambre Gustave</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-red">
+                        <div class="panel-heading  text-center">
+                            <img src="img/cam.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Cuisine</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+
+
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <!-- PRICE ITEM -->
+                    <div class="panel price panel-blue">
+                        <div class="panel-heading  text-center">
+                            <img src="img/pir.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="panel-body text-center">
+                            <p class="lead"><strong>Salle de bain</strong></p>
+                            <a href="#"><font color="#FFFFFF"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="icon-ok text-danger"></i> Online <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /PRICE ITEM -->
+
+
+                </div>
+        </ul>
+
+    </div>

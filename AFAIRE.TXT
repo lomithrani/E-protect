@@ -1,0 +1,86 @@
+﻿################ PROJET ################
+
+> Rendre accessible pour tous des systèmes de sécurité
+	- Prix abordable
+	- Installation facile
+	- Fiable
+	
+> Faible consommation d'énergie
+	- Optimiser la consommation (veille, capteurs faible conso, faible distance)
+
+> Modulable
+	- Une base mère
+	- Des blocs (capteurs) qui se connecent à la base principale (plug'n'play)
+	
+> Design innovant
+	- Dissuasif
+		* Grosses caméra visible
+		* Capteurs visibles
+	- Camouflé
+		* Base mère en tant que cadre numérique en "veille"
+		* Capteurs dissimulés dans l'environement
+
+> Backup (imprévus : coupure de courant, internet ...)
+	- Batterie de secours
+	- Réseau SigFox
+
+> Connectée
+	- Infos accessibles par l'utilisateur
+	- Centralisation des données
+	- Vérification en ligne des utilisateurs
+
+
+################## SE ##################
+
+> Base mère
+	- Ecran tactile
+	- Communication
+		* Internet
+		* SigFox
+		* RFID
+		* xBee / Bluetooth 4.1
+	- Batterie backup (en plus de l'allim secteur)
+
+> Capteurs
+	- Capteur de présence
+	- Capteur de choc
+	- Détecteur de fumée
+	- Detecteur d'ouverture de porte
+	- Caméra
+		* Compression flux et envoie en niveau de gris
+		* Stockage vidéo (couleur)
+		* Edge router - connexion internet CPL
+
+> Gestion intelligente des capteurs
+	- Envoie des données à interval régulier
+	- Envoie des données si modification d'état
+
+################## SI ##################
+
+> Serveur
+	- Communication avec la base mère
+	- Enregistrer les informations des utilisateurs
+	- Base de donnée (MySQL ?)
+	- Serveur Web (nginx / apache ?)
+
+> Sécuritée
+	- Donnée cryptées
+	- SSL
+	- Socket cryptés
+
+> UI
+	- Site responsive => pas d'appli mobile, mais une web-app
+	- Notifications par SMS
+	- Site web
+		* connection utilisateur
+		* récupération des infos des capteurs
+		* stream vidéo à la demande de l'utilisateur (option)
+
+
+################## EE ##################
+
+> Energie renouvelable
+	- Capteurs autonomes en énergie (au maximum)
+	- Récupération / stockage énergie
+
+

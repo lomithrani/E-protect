@@ -1,0 +1,40 @@
+\chapter{Résultats}
+
+Après avoir analysé et pris en compte les critères suivant : 
+\begin{itemize}
+\item Facilité et gain de temps dans l'installation du parc de capteur.
+\item Proposition d'un produit modulable.
+\item Diminution du coût d'installation pour rivaliser sur le marché.
+\item Elimination de tout intermédiaire.
+\item Necessité d'interaction avec les réseaux existants.
+\item Accessibilité constante du système par toute forme de support smart (smartphone, ordinateur, tablette) 
+\item Installation d'une alarme ($95\%$ des cambrioleurs prennent la fuite en cas de déclenchement d’une alarme).
+\item Localisation des conseils de pose de capteur ($80\%$ des cambrioleurs empruntent la porte, les autres passent par le toit ou les fenêtres)
+\item Delai de réponse des capteur à la base (5 minutes : c'est le délai moyen après lequel l'intru abandonne son effraction).\\
+\end{itemize}
+
+Nous avons créé un système E-protect décomposable en deux parties, Hardware et Software assurant à ce jour les fonctions suivantes :
+\begin{itemize}
+\item Interactions de différents type de capteurs, de chocs, de mouvements et caméra géré par une base ;
+\item Interface mobile : écran de contrôle (modification du système, mise en veille, activation/désactivation, contrôle de la connexion UNB...) ;
+\item Systeme Back-up assurant le bon fonctionnement du système en cas de coupure de courant.
+\item Accés à une page internet personnalisée en connexion constante avec le système E-protect\\
+\end{itemize}
+Du coté Hardware la centrale assure la communication inter-capteur par le protocole 6LoWPan allégé 96 octets du standard IEEE 802.15.4. présentant les avantages suivant :\\
+\begin{itemize}
+\item Des ressources limitées avec un coût faible
+\item Basse consommation et détection de l'énergie 
+\item Faible porté et courtes distances
+\item Interconnecter des unités embarqués avec peu de ressources comme des capteurs
+\item Les unités sont en sommeil la plupart du temps\\
+\end{itemize})
+Dans un souci de surveillance informatique, E-protect assure une communication permanente entre les capteurs et la base.\\
+Ce monitoring s’articule autour du protocole 6LoWPan dans un échange de données des capteurs à la base (RAS) sur un pas de temps d’une minute. En cas de non réception de message provenant d’un des capteurs, la base sonde le capteur en question et communique au client l’état du système (protocole SigFox).\\
+
+Comme dit précédement elle-ci intéragie avec la partie Software en s'appuyant sur le protocole Sigfox, assurant la communication utilisateur et présentant un gage de sécurité supplémentaire. Le 6LoWPan permet de garantir la sécurité (confidentialité et intégrité) des données et la disponibilité du réseau. \\
+Afin de répondre aux attaques externes actives tel que la paralysation du réseau par brouillage du signal radio, E-protect renforce la sécurités de ses données par l'optimisation du cryptage.\\
+Pour cela l'algorithme AES 128 est utilisé pour sécuriser la couche liaison (MAC).\\
+
+Le base E-protect se branche simplement au secteur respectant les normes Européenne.\\
+
+

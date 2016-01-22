@@ -1,0 +1,13 @@
+[00:00] > [01:00] (Ilyas) Présentation de l'équipe et présentation du plan de la présentation
+[01:00] > [02:30] Vidéo de présentation
+[02:30] > [03:30] (Hugo) Story telling
+[03:30] > [04:30] (Hugo) Introduction du projet et TRES brève introduction hardware/sofwtare et serveur
+[04:30] > [09:00] (Ilyas) Présentation hardware (et software SE) et des technologies utilisées
+[09:00] > [12:00] (Louis) Présentation partie serveur
+[12:00] > [15:00] (???) Présentation de notre solution proposée et transition vers la simulation
+[15:00] > [18:00] (Guillaume) Présentation des circuit imprimés + explications
+[18:00] > [27:00] (Guillaume et ilyas) Présentation de la base et test unitaire d'activation des capteurs / cadre photo / activation désactivation de la base
+[27:00] > [34:00] (Mathieu) Présentation du site web dans sa totalité (présentation de la page utilisateur en dernier) pour transiter sur les tests unitaires des capteur avec visualisation sur le site web
+[34:00] > [40:00] (???) Test de coupure de courant et utilisation de la solution backup SigFOX + visu sur le site web
+[40:00] > [45:00] (Hugo) Cloture de la simulation, conclusion sur le projet et transition sur les questions
+[45:00] > [55:00] Questions

@@ -1,0 +1,426 @@
+Naissance d'E-protect
+
+La création d’E-protect nous est venue lors d’un séminaire au Danemark dans la ville d’Aalborg. Nous étions, le reste de l’équipe et moi-même, enivrés dans la folie des nuits danoises, en train d’écumer les bars et pistes de danse de la vielle ville. Après avoir revu l’ensemble de nos pas, nous décidions d’aller à la rencontre des locaux, c’est à ce moment-là que nous rencontrions Torsten. Le regard vide au milieu d’une bande d’amis bien destinés à lui remonter le moral. Une mission qui après quelque verres nous convenait parfaitement. Nous nous essayâmes un instant autour de sa table et avant même que nous ayons le temps d’entamer les présentations, il coupa « ce soir je bois pour oublier ». Oublier quoi ? Oublier le fait qu’il venait de se faire cambrioler et qu’en attendant les résultats de l’enquête il noyait son dégoût dans des boissons énergétiques. 
+
+Le lendemain, nous reprenions notre séminaire et la création d’application androïde et IOS. 
+
+C’est alors apparu comme une évidence : Torsten, les applications, E-protect était né.
+
+Nous commencions alors nos recherches. En 2013 il y a eu 382 000 cambriolages et 263 000 incendies domestiques en France. L'importance de développer des solutions innovantes de protections pour lutter contre ces faits est bien réelle. 
+
+Pour information, de nos jours l’achat d’une alarme pour le domicile, entraîne l’intervention d'un technicien et si nous souhaitons apporter des modifications à l’installation un deuxième rendez-vous doit être pris. Perte de temps, surplus financier, le client est dépendant du bon vouloir de l’artisanat. 
+
+Il s’agit ici d’une intervention sérieuse, nécessitant une forte part de confiance en l’installateur, un inconnu représentant un risque potentiel.
+
+Voici ce que nous proposons et vous recommandons : Un système d’alarme modulable et installable par le client. Une avancé remarquable dans le domaine de la protection. Avec ses caméras destinées à la prévention et une nouvelle génération de capteurs invisibles révisés par un design innovant, le client pourra imaginer avec l’aide de nos conseillers son installation. 
+
+Notre offre se décompose en deux parties: 
+Une partie Hardware avec une centrale d'alarme, sous forme de cadre numérique munie d’une batterie, connecté au réseau EDF et munie d’un système BACKUP (qui permet d'assurer le fonctionnement de l'alarme le temps de prévenir l'utilisateur via SIGFOX) destinée à gérer un parc de capteurs connectés suivant une topologie meshé (ZigBee/Bluetooth Low Energy/CSRmesh). Celle-ci sera connecté à internet via Ethernet ou WIFI et sera capable de communiquer via un protocole de communication sans fil (ex: SIGFOX).
+L'alarme interagira aussi avec une partie software (Sigfox/Ethernet). Une application mobile et un site web permettront de se tenir informé de l'état de fonctionnement de l'installation. De plus et cela à n’importe quelle moment et où qu’il soit, le client pourra configurer l'alarme à distance via application Android/iOS/Windows Phone (Javascript/PHP/C#/SQL). 
+
+
+
+•   Abstract :
+
+E-protect is a home alarm system connected, easy to install and configure. To propose a least expensive system possible, E-protect is based on the elimination of intermediate and uses a network of smart sensors in a meshe network, playing on the connection of sensors between them. The installation of the E-protect components system is easier than a spun alarm system. No need to punch the walls or install the drivers, which dramatically reduces installation costs.
+
+In Hardware side, an alarm unit manages a fleet of sensors connected with meshed topology (ZigBee / Bluetooth Low Energy / CSRmesh). The alarm is deactivated when the customer enters in the house (or through mobile application). The alarm is as unobtrusive as possible and interacted with the software part (SigFox / Ethernet)
+
+A mobile application and website allow to keep the client informed of the alarm's state. In addition the customer can set up the remote alarm (Ap- plication Android / iOS / Windows Phone, Javascript / PHP / C # / SQL).
+
+E-protect maintain continuous contact between the client and home.
+
+E-protect system is:
+
+- Smartphone Application to monitor, modify, enable or disable
+
+remote system;
+
+- System Interface;
+
+- A personalized website with the same Smartphone application function ;
+
+- A backup system in case of failure of the power grid;
+
+- An innovative and modular sensor design according to customer's will;
+
+- Very low power consumption, based on a power demand reduced due
+
+the use of a meshed network
+
+
+•	Résumé :
+
+Le produit proposé est un système d’alarme résidentiel connecté, facile à installer et à configurer. Afin de proposer un système le moins chère possible, E-protect s’appuie sur l’ ́elimination des intermédiaires et utilise un réseau meshe de capteurs intelligent, travaillant sur une portée moins importante jouant ainsi sur la connexion des capteurs entre eux. L’installation des composants du système E-protect est plus simple qu’un système d’alarme filé. Nul besoin de percer les murs et de poser des conducteurs, ce qui réduit considérablement les frais d’installation.
+
+Coté Hardware, une centrale d’alarme gère un parc de capteurs connectés suivant une topologie meshé (ZigBee/Bluetooth Low Energy/CSRmesh). L’alarme se désactive lorsque le client entre dans la maison (ou passe par l’application mobile). L’alarme est la plus discrète possible et interagi avec la partie software (Sigfox/Ethernet)
+
+Une application mobile et un site web permettent de se tenir informé de l’ ́etat de fonctionnement de l’alarme. De plus le client peut configurer l’alarme à distance (Ap- plication Android/iOS/Windows Phone, Javascript/PHP/C#/SQL).
+
+E-protect assure un contact permanent entre le client et le domicile.
+
+Le système E-protect c’est :
+
+—  Application Smartphone permettant de surveiller, de modifier, d’activer ou désactiver le
+
+système à distance ;
+
+—  Interface du système ;
+
+—  Un site internet personnalisé au même fonction que l’application Smartphone ;
+
+—  Un système Backup en cas de défaillance du réseau électrique ;
+
+—  Un design de capteur innovant et modulable selon la volonté du client ;
+
+—  Une consommation énergétique très faible, reposant sur un appel de puissance réduit du fait
+
+de l’utilisation d’un réseau meshé
+
+
+
+•	Introduction :
+
+Selon l’Observatoire national de la délinquance et de la réponse pénale (ONDRP), le nombre des vols commis aux domiciles des particuliers et dans les entrepôts a une nouvelle fois augmenté en 2013, de $7.2\%$ en zone urbaine sur un an. Les cambriolages de résidences principales ont bondi de $11.3\%$ en 2014 dans les secteurs ruraux et périurbains. Soit, 23300 cambriolages de plus en 12 mois !
+
+2013: hausse de $6.4\%$ (par rapport à 2012) des cambriolages en zone urbaine et de $4.7\%$ en zone rurale. Les cambriolages dans les habitations principales ont respectivement augmenté, dans ces mêmes zones, de $7\%$ et de $1.3\%$ et ceux des résidences secondaires de $10\%$ et $17.7\%$.
+
+Les cambriolages de résidences principales ont bondi de $11.3\%$ en 2014 dans les secteurs ruraux et périurbains. Soit, $23300$ cambriolages de plus en 12 mois!\\
+
+Il se produit un cambriolage toutes les $1.5$ minutes en France, soit près de $985$ cambriolages par jour($323000$ en 2011 et $359500$ en 2012); Le nombre de cambriolages est en hausse constante : sur les 6 prochaines années un Français a 1 chance sur 10 de se faire cambrioler, tout en sachant que cette statistique ne tient pas compte des tentatives ou cambriolages non déclarés.
+
+Certains profitent de cette augmentation d'infractions pour doper le business des alarmes et vendre leur services à des prix exorbitant.
+
+ L’importance de développer des solutions de protections défiant les prix actuelles du marché est bien réelle.
+
+La procédure actuelle mobilise beaucoup de temps et représente un investissement financier. L’installation ou modifications de système d’alarmes nécessite obligatoirement l’intervention d’un technicien, facturé, dans une plage horaire poussant le client à se libérer de ses activités professionnelles.
+E-protect libère des ces contraintes, proposant un produit modulable et installable directement par le client, bénéficiant d’un service de conseils gratuit, celui-ci n’a plus à dépendre d’un organisme extérieur.
+
+
+•	Requierments / Opportunity :
+
+En tête du classement des regions les plus touchées par les infractions de domiciles nous retrouvons la Guadeloupe. Avec un taux de 6.5 cambriolages pour 1000 habitants, elle précède le Vaucluse (6.4 pour 1000 habitants). De manière générale, les départements d’outre-mer sont parmi les plus exposés au risque de cambriolage. La Guyane affiche ainsi une statistique de 6 pour 1000 habitants. Concernant le France métropolitaine, le sud-est est particulièrement touché par les affaires de cambriolages d’habitations principales.
+
+Six départements ont un taux compris entre 5.4 et 6.5 pour 1000 habitants (les Pyrénées-Orientales, l’Hérault, le Gard, le Vaucluse, les Bouches du Rhône et les Alpes-Maritimes).
+
+L’Île de France que l’on pourrait considérer comme une région très exposée limite la casse et reste dans la moyenne nationale de 2.7/1000 habitants. A l’inverse, le risque de se faire cambrioler est extrêmement faible dans le centre de la France. Les résidents du Cantal peuvent dormir sur leurs deux oreilles avec seulement 0.3 cambriolage pour 1000 habitants département du Cantal. La Haute-Corse connaît la plus forte variation à la hausse avec une augmentation de $71.4\%$.
+
+
+
+•	State of the Art :
+
+Alarme en France :
+
+\textbf{Diagral}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/diagral}
+	\end{center}
+\end{figure}
+Diagral, produit de la société Atral, créée en 1985, appartient aujourd'hui au groupe Hager.\\
+Le système Diargal s'appuit sur des alarmes à transmission radio.\\
+Note obtenue dans le comparatif Alarmes de 60 millions de consommateurs : 15.5/20 (site Français spécialiste du marché des alarmes domestiques)\\
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme DIAG90AGFK
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Sirène intégrée
+\item Annonces vocales
+\item Division du batiment en zone (de 1 à 4) pour adapter les zones à sécuriser
+\item Communication d'alerte par téléphone en option, via un module de transmission RTC ou GSM\\
+\end{itemize}
+
+
+\textbf{Delta dore}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/Deltadore_12OOpxl}
+	\end{center}
+\end{figure}
+
+Créée dans les années 70, Delta Dore est une société spécialisé dans les économies d'énergie avant d'élargir son secteur d'activité en intégrant le marché des alarmes sans fils en 2000.\\
+Note obtenue dans le comparatif Alarmes de 60 millions de consommateurs : 12/20 (site Français spécialiste du marché des alarmes domestiques)\\
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme sans fil à transmission radio 868 MHz
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Sirène intégrée
+\item Fonctionne sur pile pour éviter les défaut d'alimentation
+\item Détecteur d'ouverture MICRO COX alimenté par pile
+\item Module de transmission RTC ou GSM en option\\
+\end{itemize}
+
+\textbf{Tag Technologies}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/Tag}
+	\end{center}
+\end{figure}
+
+PME créée en 2005 à Toulouse, en collaboration avec le CNRS dans le cadre d'un programme de recherche et de développement.\\
+La société est un acteur innovant sur le marché de l'alarme sans fil à travers ses marques Domotag et My-Fox.\\
+Note obtenue dans le comparatif Alarmes de 60 millions de consommateurs : non noté.\\
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale qui se relie à une ligne RTC pour délivrer ses alertes par le réseau IP sous forme d'emails.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Télécommande 4 boutons pour piloter le système à distance\\
+\end{itemize}
+
+\textbf{mhouse}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/mhouse}
+	\end{center}
+\end{figure}
+
+Filiale du groupe Italien Nice, mhouse propose des systèmes d'alarmes qui se distingue par leur facilité d'installation et d'utilisation grâce à des interfaces intuitives.\\
+Note obtenue dans le comparatif Alarmes de 60 millions de consommateurs : non noté.\\
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme avec sirène, synthèse vocale et ransmetteur RTC/GSM intégrés.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Relié au secteur avec Batterie intégrée 
+\item Communication radio sur les canaux 433 et 868MHz
+\item Detecteur d'ouverture
+\item Commande vocale
+\item Badge transpondeur MAB1\\
+\end{itemize}
+
+\textbf{Daitem}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/daitem}
+	\end{center}
+\end{figure}
+
+Autre marque de la société Atal, marque d'alarme haute gamme, onéreuse, vendu exclusivement auprès d'installateurs. Pas de pack proposé au particulier.
+
+\textbf{Somfy}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/Somfy}
+	\end{center}
+\end{figure}
+
+Créée dans les années 60 et aujourd'hui cotée en bourse, Somfy est le leader mondial des systèmes d'automatismes d'ouvertures et de fermetures des stores, volets roulant, etc...\\
+Somfy propose aussi des système d'alarme NFA2P.\\
+Note obtenue dans le comparatif Alarmes de 60 millions de consommateurs : 9.5/20.\\
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme sans fil.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Sirène intégrée
+\item Ne dispose pas nativement d'éléments de communication
+\item Module RTC ou GSM en option
+\item Detecteur d'ouverture à contact magnétique
+\item Télécommande marche/arrêt\\
+
+
+
+Alarme à l'Internationnale :
+
+\textbf{Visionic}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/visionic}
+	\end{center}
+\end{figure}
+
+Société israélienne créée en 1973 faisant aujourd'hui partie du groupe Suisse TYCO, leader mondial des solutions de protections et de sécurité. Seulement disponible auprès de grossiste et des revendeurs spécialisés.
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme sans fil.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Central doté de la technologie PowerG qui simplifie les installations, les éconoies d'énergie et une liaison sans fil fiable 
+\item Cryptage de type AES\\
+
+\textbf{Jablotron}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/jablotron}
+	\end{center}
+\end{figure}
+
+Société Tchèque peu commercialisé en France.
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme sans fil.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Central qui intègre divers protocole : RTC, GPRS, LAN\\
+
+\textbf{Honeywell}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/honeywell}
+	\end{center}
+\end{figure}
+
+Créée dans les années 90, Honeywell conçoit et commercialise aux travers de ses marques Domonial et Ademco des systèmes d'alarme ant-intrusion.\\
+Commercialisation très discrète en France.\\
+
+\textbf{Chuango}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/chuango}
+	\end{center}
+\end{figure}
+
+Société Chinoise créée en 2001, Chuango est un des leaders mondial de l'alarme.\\
+Produits peu commercialisés en France. 
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme GSM G5.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Aucune fonctions supplémentaires. 
+
+\textbf{Hager}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/hager}
+	\end{center}
+\end{figure}
+
+Hager Group a été créée en 1955 intervenant dans l'ingénierie électrique. La firme s'est depuis diversifié et a étendu son activité dans les alarmes pour domicile.
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme Logisty Serenity.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Communication centrale/capteurs assurée par la technologies Twinband
+\item Pas de fonction de communication téléphonique
+\item L'ajout d'un module prevoit la transmission d'image\\
+
+\textbf{Alarme paradoxe}\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.98\linewidth]{imgs/alarme_paradoxe}
+	\end{center}
+\end{figure}
+
+Sociétée créée en 1989 qui bénificie d'un large réseau de distributeurs répartis dans une centaine de pays.
+
+\textbf{Définition du produit :}
+\begin{itemize}
+\item Centrale d'alarme Magellan 6250.
+\end{itemize}
+
+\textbf{Différences remarquées en comparaison avec le système E-protect :}
+\begin{itemize}
+\item Central gérant les protocoles GPRS, GSM, RTC et d'un module double SIM
+\item Communication sans fil fait sur les canaux 868 ou 433MHz\\
+
+
+•	Proposed solution :
+
+Innovations majeures :
+
+
+Choix du protocole 6LoWPan allégée 96 octets sur UDP (User Datagram Protocol) :
+
+	◦	E-protect travail sur un réseau meshé interne qui ne necessite pas énormément de données mais suffisament pour transmettre les données issues des caméras de surveillance. 
+	◦	Pour toute modification de configuration du système d'alarme, 6LoWPan permet à une machine nouvellement connectée au réseau de s'autoconfigurer soit déterminer son adresse lien local et vérifier son unicité. De plus ce protocole présente des avantages certains concernant : 
+	▪	L'intéropérabilité extensive (wifi, ethernet, GPRS, ATM)
+	▪	La sécurité (authentification, pare-feux)
+	▪	Les services réseaux de haut niveau (équilibrage de la charge, cache, mobilité, NAT)
+	▪	L'adressage et routage
+	▪	Les services applicatifs de haut niveaux (HTTP,XML,SOAP,REST) 
+	▪	Les outils de supervision réseaux
+	▪	Délai de transmission plus court, du à l’utilisation d’un routage Mesh Under (décision de routage fait au niveau du 6 LoWPan et seulement avec les fragments du paquets IPv6 reconstitué uniquement dans l'équipement destinataire).
+
+
+
+Système de Back-up : 
+
+	E-protect assure le fonctionnement du système en cas de coupure de courant en basculant l'installation en  fonctionnement Back-up.
+
+	•	Alimentation
+L'ensemble du système se place en fonctionnement basse consommation. Seules les fonctions principales  restent actives (écran et rasberry se désactivent). 
+L'alimentation générale se fait par déchargement de batterie assurant le fonctionnement de l'ensemble du  système 48h durant. Branché au secteur, la batterie utilisée se charge en fonctionnement normal.
+
+	•	Communication 
+Utilisation de la communication SigFox ( protocole intégré à la base) : permet d’alerter le client en cas de coupure d’électricité ou de connexion internet. 
+
+SIGFOX utilise UNB (Ultra Narrow Band) basé sur une technologie radio pour connecter des périphériques à son réseau mondial.
+Le réseau fonctionne dans les bandes ISM (bandes de fréquences sans licence) disponibles mondialement et coexistent sur ces fréquences avec d'autres technologies radio, mais sans aucun risque de collision ou de problèmes de capacité. 
+Avantage de ce protocole : SIGFOX est compatible avec les émetteurs-récepteurs existants et activement transféré vers un nombre de plateformes techniques.
+
+
+
+Sécurisation des données : 
+
+Le 6LoWPan permet de garantir la sécurité (confidentialité et intégrité) des données et la disponibilité du réseau.
+Afin de répondre aux attaques externes actives tel que la paralysation du réseau par brouillage du signal radio, E-protect renforce la sécurités de ses données par l'optimisation du cryptage.
+Pour cela l'algorithme AES 128 est utilisé pour sécuriser la couche liaison (MAC). Cet algorithme rend des méthodes de brouillage classique tels que la cryptanalyse linéaire ou différentielle extremement difficile.
+
+
+
+Alimentation du système : 
+
+Utilisation de Witricity, modèle WIT-5000 : 
+	•	Cette méthode repose sur la conversion d’énergie de radiations microondes directionnelles, limitant les risques sur la santé et la sécurité, en énergie électrique continue. 
+	⁃	Il s’agit d’un système de filtrage et d’un redresseur, basé sur l’association originale d’un système passif d’adaptation d’impédance optimisé et d’un convertisseur spécifique.
+	⁃	Ce système à une durée de vie illimité.
+	⁃	Conçu avec la spécification Rezence pour l'électronique grand public. Il fonctionne à 6,78 MHz, une fréquence de fonctionnement qui est adoptée pour les applications électronique grand public. A cette fréquence, conçu pour respecter les limites applicables d'exposition humaine, l’interaction avec des corps étrangers métalliques est minimale.
+	⁃	L'utilisation de Bluetooth LE pour le contrôle du système, permet au Wit-5000 de tirer parti de l'infrastructure de communication existante qui peut déjà être en place dans les dispositifs de consommateurs (smartphones, tablettes, ordinateurs personnels).
+
+
+
+Gérer la consommation du système :
+
+Reposant sur un réseau meshé et une technologie de capteur innovante, le système E-protect travaille sur des communications (capteurs/capteur, capteur/base) de faibles portées. Une économie d'énergie consommée conséquente est réalisée par diminution d'appelles de puissance.
+
+•	Results :
+
+•	Discussion and Analysis :
+
+« La liberté au service de l’innovation »
+Le choix de la valorisation concours répond à différentes envies de notre part. Le fait de pouvoir challenger notre travail nous pousse à être meilleur, à créer, innover, à trouver ce qui peut faire la différence. La voie choisi fût l’innovation. Nous avons compris que nous ne pourrions pas rivaliser avec les industriels bien en place sur le marché et sur des techniques et architectures utilisés concernant leur produit. Pour exister il fallait apporter quelque chose de nouveau, c’est ce qui nous poussa a choisir cette valorisation; Le concours nous permet de réinventer totalement les produits en place, les repenser, repartir à zéro et laisser place à une imagination totale. Contrairement aux autres valorisations, notre marge de manoeuvre est totale, nous sommes seul maître de notre projet et pouvons lui donner quand bon nous semble la direction que nous souhaitons. Nous fixons les priorités et la marche à suivre. Cette ambiance de travaille est jouissive et permet à l’ensemble de l’équipe de participer et de s’épanouir pleinement. La liberté au service de l’innovation. 
+
+
+
+•	Conclusion :
+
+Après 2 mois de travaux, notre système répond entièrement au cahier des charges. De nombreux test ont été réalisé, le produit est finis et peut dès à présent être commercialisé. De part son architecture, la topologie, l’hardware, le software utilisé et son coût E-protect défie toute concurrence sur le marché de la sécurité de domicile.
+
+
+
+
+
+
+
+

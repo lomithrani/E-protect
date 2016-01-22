@@ -1,0 +1,55 @@
+\chapter{Contraintes}
+
+\section{Contraintes SI :}
+\subsection{Backend}
+\begin{itemize}
+	\item Technologies :
+Nous nous sommes imposé comme contrainte de faire le backend en node.js, nous avons choisi le framework sailsjs, qui présente une architecture MVC et prends en charge nativement les websockets (avec socket.io) et s'adapte à n'importe quel framework frontend. Le raspberry communique avec le serveur en tcp, sailsjs cependant ne supporte pas les sockets tcp il faut donc que l'on fasse un bridge en node qui ouvrira un socket en tcp avec la raspberrypi d'un côté et un websocket avec l'application web de l'autre.\\
+\end{itemize}
+
+\subsection{Utilisateurs :}
+L'utilisateur doit pouvoir :
+\begin{itemize}
+	\item Pouvoir créer un compte ;
+	\item Pouvoir connecter une base existante mais non lié à un utilisateur ;
+	\item Pouvoir renommer les devices ;
+	\item Pouvoir monitorer en temps réel l'activité des bases et devices.\\
+\end{itemize}
+
+\subsection{Serveur :}
+Le serveur doit répondre aux actions suivantes :
+\begin{itemize}
+	\item Connecter des devices aux bases (via websocket) ;
+	\item Rajouter une base (via requete url sigfox).\\
+\end{itemize}
+
+\subsection{Autres contraintes :}
+\begin{itemize}
+	\item Les Comptes admin doivent pouvoir gérer les utilisateurs ;
+	\item Possibilité de logger l'activité des devices.\\
+\end{itemize}
+
+
+\section{Contrainte SE :}
+\subsection{Environnement :}
+\begin{itemize}
+	\item La base doit être camouflé et prendre la forme d'un objet courant ;
+	\item La base nécessite une prise de courant à proximité ;
+	\item Nécessite un port Ethernet proche ;
+	\item Les capteurs destinés à l'intérieur de la maison doivent être le plus discret possible.\\
+\end{itemize}
+
+\subsection{Autonomie :}
+\begin{itemize}
+	\item La base doit pouvoir communiquer pendant au moins 48h après une coupure de courant ;
+	\item La base doit éteindre l'écran numérique lors d'une coupure de courant ;
+	\item Les capteurs doivent avoir une autonomie de 1 an en fonctionnement normal.\\
+\end{itemize}
+
+\subsection{Technologie :}
+\begin{itemize}
+	\item La base doit pouvoir gérer le réseaux local de capteurs (6lowpan IPV6) ;
+	\item La base doit communiquer avec le serveur distant en IPV4 ;
+	\item En cas de coupure de courant, la base doit communiquer grâce au modem sigFox.
+	\item Les capteurs doivent communiquer en 6lowPan\\
+\end{itemize}

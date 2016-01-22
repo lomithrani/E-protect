@@ -1,0 +1,33 @@
+\chapter{Description du système}
+
+\section{Périmètre du projet cibles/clientèle}
+
+E-protect assurera la surveillance et la protection des clients résidentiels. Les régions prioritairement ciblées sont la \textbf{Guadeloupe} première victime du cambriolage, avec un taux de $6.5$ cambriolages pour $1000$ habitants, elle précède le \textbf{Vaucluse} ($6.4$ pour $1000$ habitants). De manière générale, les départements d’outre-mer sont parmi les plus exposés. La \textbf{Guyane} affiche ainsi une statistique de 6 pour $1000$ habitants. Concernant le France métropolitaine, le sud-est est particulièrement touché par les affaires de cambriolages d’habitations principales.\\
+
+De plus, en métropole six départements ont un taux compris entre $5.4$ et $6.5$ pour $1000$ habitants (\textbf{les Pyrénées-Orientales, l’Hérault, le Gard, le Vaucluse, les Bouches du Rhône et les Alpes-Maritimes}).\\
+
+L’Île de France que l’on pourrait considérer comme une région très exposée limite la casse et reste dans la moyenne nationale de $2.7/1000$ habitants. A l’inverse, le risque de se faire cambrioler est extrêmement faible dans le centre de la France. Les résidents du Cantal peuvent dormir sur leurs deux oreilles avec seulement $0.3$ cambriolage pour $1000$ habitants département du Cantal. La \textbf{Haute-Corse} connaît la plus forte variation à la hausse avec une augmentation de $71.4\%$.\cite{www:ONDRP}\\
+
+
+
+\section{Description des besoins fonctionnels}
+
+
+La solution proposé peut se décomposer en deux parties :
+\begin{itemize}
+\item \textbf{Hardware} : une centrale d'alarme va gérer un parc de capteurs connectés suivant une topologie meshé (ZigBee/Bluetooth Low Energy/CSRmesh). L'alarme devra se désactiver lorsque le client entre dans la maison (ou appuies sur un bouton de l'application mobile). L'alarme devra être la plus discrète possible. L'alarme doit pouvoir intéragir avec la partie software (Sigfox/Ethernet);
+\item \textbf{Software} : Une application mobile et un site web permettront de se tenir informé de l'état de fonctionnement de l'alarme. De plus le client pourra configurer l'alarme à distance (Application Android/iOS/Windows Phone, Javascript/PHP/C\#/SQL).
+\end{itemize}
+
+\section{Fonctions attendues}
+
+Différentes fonctions sont attendues lors du développement d’E-protect :
+\begin{itemize}
+\item Application Smartphone permettant de surveiller, de modifier, d’activer ou désactiver le système à distance;
+\item Interface du système;
+\item Une connexion avec le poste de police le plus proche;
+\item Un système Backup en cas de défaillance du réseau électrique;
+\item Un design de capteur innovant et modulable selon la volonté du client;
+\item Une consommation énergétique très faible, reposant sur un appel de puissance réduit du fait de l’utilisation d’un réseau meshe;
+\item … 
+\end{itemize}

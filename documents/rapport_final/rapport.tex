@@ -1,0 +1,65 @@
+\documentclass[francais]{report}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{textcomp}
+\usepackage{vmargin}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{eurosym}
+\usepackage{titlesec}
+\usepackage{url}
+
+\setmarginsrb{3.0cm}{3.0cm}{3.0cm}{3.0cm}{1.0cm}{0.5cm}{1.0cm}{1.0cm}
+
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+  {1ex}
+  {\titlerule\vspace{0.2ex}\filleft}
+  [\vspace{0.2ex}\titlerule]
+
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+\begin{document}
+\setlength{\parindent}{0cm}
+
+
+\input{presentation.tex}
+
+% ---------------------------------------------------------------------------- %
+%                               Table of Contents                              %
+% ---------------------------------------------------------------------------- %
+
+\tableofcontents
+
+% ---------------------------------------------------------------------------- %
+%                              Internal Structure                              %
+% ---------------------------------------------------------------------------- %
+
+\clearpage
+
+\input{naissance}
+\input{abstract}
+\input{resume}
+\input{introduction}
+\input{requierments}
+\input{state_of_art}
+\input{solution}
+\input{solution_detaillee}
+\input{results}
+\input{discussion}
+\input{conclusion}
+
+
+% ---------------------------------------------------------------------------- %
+%                                  Appendices                                  %
+% ---------------------------------------------------------------------------- %
+
+\label{Bibliographie}
+%\nocite{*}
+%\bibliographystyle{unsrt}
+\bibliographystyle{unsrt}
+\bibliography{bib/biblio}
+
+\end{document}

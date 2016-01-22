@@ -1,0 +1,36 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Pr\IeC {\'e}sentation d'E-protect}{3}
+\contentsline {section}{\numberline {1.1}Contexte}{3}
+\contentsline {section}{\numberline {1.2}Objet du projet}{5}
+\contentsline {chapter}{\numberline {2}Description du syst\IeC {\`e}me}{6}
+\contentsline {section}{\numberline {2.1}P\IeC {\'e}rim\IeC {\`e}tre du projet cibles/client\IeC {\`e}le}{6}
+\contentsline {section}{\numberline {2.2}Description des besoins fonctionnels}{6}
+\contentsline {section}{\numberline {2.3}Fonctions attendues}{6}
+\contentsline {chapter}{\numberline {3}Besoins fonctionnels}{7}
+\contentsline {section}{\numberline {3.1}Syst\IeC {\`e}me embarqu\IeC {\'e}}{7}
+\contentsline {subsection}{\numberline {3.1.1}Fonctions principales}{7}
+\contentsline {subsubsection}{Communiquer}{7}
+\contentsline {subsubsection}{Communication serveur}{7}
+\contentsline {subsubsection}{Backup}{8}
+\contentsline {subsubsection}{Auto-monitoring}{8}
+\contentsline {subsubsection}{S\IeC {\'e}curiser les donn\IeC {\'e}es}{9}
+\contentsline {subsection}{\numberline {3.1.2}Fonction compl\IeC {\'e}mentaires}{9}
+\contentsline {subsubsection}{Alimenter le syst\IeC {\`e}me}{9}
+\contentsline {subsubsection}{G\IeC {\'e}rer la consommation}{9}
+\contentsline {subsubsection}{Design}{10}
+\contentsline {section}{\numberline {3.2}Syst\IeC {\'e}me d'information}{10}
+\contentsline {subsection}{\numberline {3.2.1}Besoins fonctionnels en Front Office}{10}
+\contentsline {subsection}{\numberline {3.2.2}Besoins fonctionnels en Back Office}{10}
+\contentsline {chapter}{\numberline {4}Contraintes}{11}
+\contentsline {section}{\numberline {4.1}Contraintes SI :}{11}
+\contentsline {subsection}{\numberline {4.1.1}Backend}{11}
+\contentsline {subsection}{\numberline {4.1.2}Utilisateurs :}{11}
+\contentsline {subsection}{\numberline {4.1.3}Serveur :}{11}
+\contentsline {subsection}{\numberline {4.1.4}Autres contraintes :}{11}
+\contentsline {section}{\numberline {4.2}Contrainte SE :}{11}
+\contentsline {subsection}{\numberline {4.2.1}Environnement :}{11}
+\contentsline {subsection}{\numberline {4.2.2}Autonomie :}{12}
+\contentsline {subsection}{\numberline {4.2.3}Technologie :}{12}
+\contentsline {chapter}{\numberline {5}Prestations attendues}{13}
+\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation des pr\IeC {\'e}stations attendues}{13}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\`e}res de choix}{13}

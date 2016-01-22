@@ -1,0 +1,39 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Naissance d'E-protect :}{2}
+\contentsline {chapter}{\numberline {2}Abstract :}{3}
+\contentsline {chapter}{\numberline {3}Resume :}{4}
+\contentsline {chapter}{\numberline {4}Introduction :}{5}
+\contentsline {chapter}{\numberline {5}Requierments / Opportunity :}{6}
+\contentsline {chapter}{\numberline {6}Etat de l'art :}{7}
+\contentsline {section}{\numberline {6.1}Alarme en France :}{7}
+\contentsline {section}{\numberline {6.2}Alarme \IeC {\`a} l'Internationnale :}{10}
+\contentsline {chapter}{\numberline {7}Solutions propos\IeC {\'e}es :}{13}
+\contentsline {section}{\numberline {7.1}Innovations majeures :}{13}
+\contentsline {subsection}{\numberline {7.1.1}Choix du protocole 6LoWPan all\IeC {\'e}g\IeC {\'e}e 96 octets sur UDP (User Datagram Protocol) :}{13}
+\contentsline {subsection}{\numberline {7.1.2}Syst\IeC {\`e}me de Back-up :}{13}
+\contentsline {subsubsection}{Alimentation}{13}
+\contentsline {subsubsection}{Communication}{13}
+\contentsline {subsection}{\numberline {7.1.3}S\IeC {\'e}curisation des donn\IeC {\'e}es :}{14}
+\contentsline {subsection}{\numberline {7.1.4}Alimentation du syst\IeC {\`e}me :}{14}
+\contentsline {subsection}{\numberline {7.1.5}G\IeC {\'e}rer la consommation du syst\IeC {\`e}me :}{14}
+\contentsline {section}{\numberline {7.2}Syst\IeC {\'e}me d'information}{14}
+\contentsline {subsection}{\numberline {7.2.1}Besoins fonctionnels en Front Office}{14}
+\contentsline {subsection}{\numberline {7.2.2}Besoins fonctionnels en Back Office}{15}
+\contentsline {chapter}{\numberline {8}Solutions propos\IeC {\'e}es d\IeC {\'e}taill\IeC {\'e}es:}{16}
+\contentsline {section}{\numberline {8.1}Syst\IeC {\`e}me embarqu\IeC {\'e}}{16}
+\contentsline {subsection}{\numberline {8.1.1}Fonctions principales}{16}
+\contentsline {subsubsection}{Communiquer}{16}
+\contentsline {subsubsection}{Communication serveur}{16}
+\contentsline {subsubsection}{Backup}{17}
+\contentsline {subsubsection}{Auto-monitoring}{17}
+\contentsline {subsubsection}{S\IeC {\'e}curiser les donn\IeC {\'e}es}{18}
+\contentsline {subsection}{\numberline {8.1.2}Fonction compl\IeC {\'e}mentaires}{18}
+\contentsline {subsubsection}{Alimenter le syst\IeC {\`e}me}{18}
+\contentsline {subsubsection}{G\IeC {\'e}rer la consommation}{18}
+\contentsline {subsubsection}{Design}{19}
+\contentsline {section}{\numberline {8.2}Syst\IeC {\'e}me d'information}{19}
+\contentsline {subsection}{\numberline {8.2.1}Besoins fonctionnels en Front Office}{19}
+\contentsline {subsection}{\numberline {8.2.2}Besoins fonctionnels en Back Office}{19}
+\contentsline {chapter}{\numberline {9}R\IeC {\'e}sultats}{20}
+\contentsline {chapter}{\numberline {10}Discussion et Analyse :}{22}
+\contentsline {chapter}{\numberline {11}Conclusion :}{23}

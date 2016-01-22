@@ -1,0 +1,25 @@
+Lib c : erbium
+http://fr.farnell.com/atmel/atavrzusbstick/kit-de-dev-2-4ghz-rzraven-usb-stick/dp/1562234?Ntt=raven+usb+stick
+
+web service collect
+coap
+
+
+TUTOS ipv6
+http://dak664.github.io/contiki-doxygen/a01682.html
+http://www.linux-france.org/prj/edu/archinet/systeme/ch09s03.html
+
+Mardi 4 Novembre
+
+[ilyas]
+Je suis allé voir M Haïk pour pour avoir des conseils concernant la récupération d'énergie. Voici les solutions proposées:
+- Panneaux solaires (même en indoor)
+- capteurs piézo pour récupérer de l'énergie généré par une pression (exemple interrupteur)
+- Transformation chaleur/electricité: solutions trop coûteuse et difficile à mettre en oeuvre
+
+
+Mercredi 2 Decembre
+
+[guillaume]
+Commande des 3x3 PCB chez OSH Park.
+Bon de commande et facture : /documents/[FA]OSH_Park.pdf

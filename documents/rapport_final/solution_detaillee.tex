@@ -1,0 +1,104 @@
+\chapter{Solutions proposées détaillées:}
+
+\section{Système embarqué}
+
+\subsection{Fonctions principales}
+
+\subsubsection{Communiquer}
+\textbf{Communication inter-capteurs}
+Une centrale d'alarme contrôle un parc de capteurs connectés suivant une topologie meshé (ZigBee/Bluetooth Low Energy/CSRmesh).\\
+Les données perçues par les capteurs sont transmises avec le protocole 6lowPan.\\
+Le protocole 6LoWPan appartient au standard IEEE 802.15.4. Celui-ci présente :\\
+\begin{itemize}
+\item Des ressources limitées avec un coût faible
+\item Basse consommation et détection de l'énergie 
+\item Faible porté et courtes distances
+\item Interconnecter des unités embarqués avec peu de ressources comme des capteurs
+\item Les unités sont en sommeil la plupart du temps\\
+\end{itemize}
+
+\textbf{Protocole 6LoWPan}\\
+A la volonté du client, pour toute modification de configuration du système d'alarme, 6LoWPan permet à une machine nouvellement connéctée au réseau de s'autoconfigurer soit déterminer son adresse lien local et vérifier son unicité. De plus ce protocole présente des avantages certains concernant l'intéropérabilité extensive (wifi, ethernet, GPRS, ATM), la sécurité (authentification, pare-feux), les services réseaux de haut niveau (équilibrage de la charge, cache, mobilité, NAT), l'adressage et le routage, les services applicatifs de haut niveaux (HTTP,XML,SOAP,REST) ainsi qu'au niveau des outils de supervision réseaux.\cite{www:contiki}\\
+
+Le choix du protocole 6LoWPan se définis autour de plusiseurs points clés.\\
+E-protect travail sur un réseau meshé interne qui ne necessite pas énormément de données mais suffisament pour transmettre les données issues des caméras de surveillance. Nous obtons donc pour la technologie 6LoWPan allégée 96 octets sur UDP (User Datagram Protocol).\\
+
+\textbf{Modalité de routage}\\
+Le 6LoWPan utilisé utilise un routage Mesh Under.\\
+La décision de routage se faisant au niveau du 6 LoWPan et seulement avec les fragments du paquets IPv6 reconstitué uniquement dans l'équipement destinataire permet un délai de transmission plus court.\cite{www:contiki}\\
+
+\subsubsection{Communication serveur}
+La connexion serveur est assuré par le protocole TCP, protocole plus orienté « connexion » afin de répondre aux exigences de sécurités de transmission des données.\\ 
+Répondant à l’ensemble des options du protocole UDP, le protocole TCP vérifie que le destinataire soit prêt à réceptionner les données et témoigne de la bonne réception par un accusé de réception. Pour cela les paquets importants de données sont transmis en somme de plus petit paquets pour que l’IP les accepte.\\
+Le contrôle des données s’effectue par le biais du contrôle CRC. Le CRC vérifie l’intégralité des données transmises, permettant dans le cas où les données reçues sont corrompues, aux destinataires de demander à l'émetteur de renvoyer les données corrompues.\cite{www:contiki}\\
+
+\textbf{Communication utilisateur} % web-site (reponsive mobile + ordinateur) / sms ...
+Une application mobile et un site web permet de tenir le client informé de l'état de fonctionnement de l'ensemble du système et lui permettront de le configurer à distance (Application Android/iOS/Windows Phone, Javascript/PHP/C\#/SQL).\\
+\begin{itemize}
+\item Application mobile avec notification push
+\item Interface mobile : écran de contrôle (modification du système, mise en veille, activation/désactivation, contrôle de la connexion UNB...)
+\item Accés à une page internet personnalisée en connexion constante avec le système E-protect\\
+\end{itemize}
+
+\subsubsection{Backup}
+\textbf{Alimentation secondaire}
+E-protect assure le fonctionnement du système en cas de coupure de courant en basculant l'instalation en fonctionnement Back-up.\\
+L'ensemble du système se place en fonctionnement basse consommation. Seules les fonctions principales restent actives (écran et rasberry se désactivent). Le client garde le contrôle de l'installation (activation/désactivation de l'ensemble du système de sécurité) par le biais d'une carte de contôle.\\
+L'alimentation générale se fait par déchargement de batterie assurant le fonctionnement de l'ensemble du système 48h durant. Branché au secteur, la batterie untilisée se charge en fonctionnement normal.\\
+\textbf{Communication secondaire}
+La communication SigFox permet d’alerter le client en cas de coupure d’électricité ou de connexion internet. Ce protocole est intégré à la base.
+SIGFOX utilise UNB (Ultra Narrow Band) basé sur une technologie radio pour connecter des périphériques à son réseau mondial.\\
+Le réseau fonctionne dans les bandes ISM (bandes de fréquences sans licence) disponibles mondialement et coexistent sur ces fréquences avec d'autres technologies radio, mais sans aucun risque de collision ou de problèmes de capacité. SIGFOX utilise actuellement la bande européenne ISL la plus populaire sur 868MHz (telle que définie par l'ETSI et CEPT).\\
+
+Un avantage important fourni par l'utilisation de la technologie à bande étroite est la flexibilité liée au choix de l'antenne.\\
+
+Le protocole SIGFOX est compatible avec les émetteurs-récepteurs existants et activement transféré vers un nombre de plateformes techniques.\cite{www:Sigfox}\\
+
+\subsubsection{Auto-monitoring}
+Dans un souci de surveillance informatique, E-protect assurera une communication permanente entre les capteurs et la base.\\
+Ce monitoring s’articule autour d’un échange de données (protocole 6LoWPan) des capteurs à la base (RAS) sur un pas de temps d’une minute. En cas de non réception de message provenant d’un des capteurs, la base sonde le capteur en question et communique au client l’état du système (protocole SigFox).\\
+
+\subsubsection{Sécuriser les données}
+\textbf{6LoWPan}\\
+Le 6LoWPan permet de garantir la sécurité (confidentialité et intégrité) des données et la disponibilité du réseau. \\
+Afin de répondre aux attaques externes actives tel que la paralysation du réseau par brouillage du signal radio, E-protect renforce la sécurités de ses données par l'optimisation du cryptage.\\
+Pour cela l'algorithme AES 128 est utilisé pour sécuriser la couche liaison (MAC). Cet algorithme a été conçu de manière à rendre des méthodes de brouillage classique tels que la cryptanalyse linéaire ou différentielle extremement difficile.\cite{www:contiki}\\
+
+\textbf{SigFox}\\
+La communication sur SIGFOX est sécurisée à bien des égards, y compris la protection anti-rejeu, message de brouillage, séquençage, etc. Cependant, l'aspect le plus important de la sécurité de transmission est le fait que seuls les fournisseurs de périphérique comprennent les données échangées entre le périphérique et les systèmes informatiques. SIGFOX agit seulement comme un canal de transport, poussant les données vers le système informatique du client.\cite{www:Sigfox}
+
+
+\subsection{Fonction complémentaires}
+
+\subsubsection{Alimenter le système}
+Le système E-protect propose deux systèmes d'alimentations electriques
+\textbf{Utilisation du secteur}\\
+Branchement de la base au secteur. 
+\textbf{Utilisation de Witricity, modèle WIT-5000}\\
+Cette méthode repose sur la conversion d’énergie de radiations microondes directionnelles, limitant les risques sur la santé et la sécurité, en énergie électrique continue.\\
+Il s’agit d’un système de filtrage et d’un redresseur, basé sur l’association originale d’un système passif d’adaptation d’impédance optimisé et d’un convertisseur spécifique.\\
+Ce système à une durée de vie illimité.\\
+Le  transmetteur et le récepteur ont des antennes à boucle magnétique synchronisé à la même fréquence. le système fonctionne dans un champs magnétique, identique au champ magnétique de la bobine Tesla mais utilise une énergie considérablement plus basse et sécuritaire grâce à la technologie des champs rapprochés qui donne un bon pouvoir de transmission.\\
+Le WIT-5000 est conçu avec la spécification Rezence pour l'électronique grand public, de l'Alliance pour l'électricité sans fil (A4WP). Il fonctionne à 6,78 MHz, une fréquence de fonctionnement qui est adoptée pour les applications électronique grand public et largement utilisé dans les applications industrielles, médicales et scientifiques. A cette fréquence, le système de recharge sans fil a une interaction minimale avec des corps étrangers métalliques, et a été conçu pour respecter les limites applicables d'exposition humaine. L'utilisation de Bluetooth LE pour le contrôle du système, permet au Wit-5000 de tirer parti de l'infrastructure de communication existante qui peut déjà être en place dans les dispositifs de consommateurs (smartphones, tablettes, ordinateurs personnels).\cite{www:Witricity}
+
+\subsubsection{Gérer la consommation}
+Reposant sur un réseau meshé et une technologie de capteur innovante, le système E-protect travaille sur des communications (capteurs/capteur, capteur/base) de faibles portées. Une économie d'énergie consommée conséquente est réalisée par diminution d'appelles de puissance.\\
+\subsubsection{Design}
+Le réseau E-protect s'articule autour de deux types de capteurs à différentes fonctions, les dissuasifs et les camouflés.\\
+\textbf{Dissuasif}\\
+Fidèle à sa fonction première les capteurs dissuasifs sont installés de sorte à ce que l'intru potentiel puisse les voir à l'interieur (fenètre, porte vitrée, etc...) comme à l'exterieur du domicile et renonce à donner suite à ses intentions.\\
+\textbf{Camouflé}\\
+Les capteurs camouflés ont une fonction propre à chaque clients, de taille plus petite et installable sur n'importe quel support.
+
+\section{Systéme d'information}
+
+\subsection{Besoins fonctionnels en Front Office}
+
+Notre site web à pour objectif d’être consulté par l'utilisateur afin qu'il puisse avoir un état des capteurs qui sont chez lui. Dans ce but il faut qu'en cas d’alerte il puisse se connecter de n'importe quel périphérique, portable , tablette ou ordinateur, nous avons donc besoin d'un site web adaptatif (responsive design).\\
+Nous optons pour le framework css/html bootstrap. Dans le but de rendre le site le plus simple possible pour l’utilisateur se traduisant par la présence de toutes les actions sur la page utilisateur.\\
+
+\subsection{Besoins fonctionnels en Back Office}
+Pour la communication entre les bases et le serveur nous utilisons la technologie des socket qui représente l’avantage de ne pas être à sens unique et qui permet de savoir quand la connexion est perdu, contrairement aux simples requetes http.\\
+Le framework, sailsjs, ne pouvant pas gérer les sockets tcp (ceux utilisé par la raspberrypi) nous obtons pour un bridge via un serveur node qui communique à la fois avec la raspberrypi et le serveur web en utilisant socketio. Nous nous imposons d’utiliser une base de donnée NoSQL et avons choisi MongoDb.\\
+
+Afin de notifier l'utilisateur, l'utilisation de l’API Twilio permet d'envoyer une alerte par message telephonique.\\

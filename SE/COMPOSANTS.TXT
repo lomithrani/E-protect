@@ -1,0 +1,58 @@
+1x		7" Touch screen					http://www.chalk-elec.com/?page_id=1280#!/7-open-frame-universal-HDMI-LCD-with-capacitive-multi-touch/p/21750207/category=3094861 (prendre les cables en + hdmi to hdmi-mini)
+OU prendre 1 touch pannel + un écran (de même taille)
+http://www.chalk-elec.com/?page_id=1280#!/c/0/inview=category3094846&offset=0&sort=priceAsc
+
+
+2x		Motion sensor					https://www.sparkfun.com/products/8630 (1 capteur motion + 1 motion sur la caméra pour l'activer uniquement en cas de mouvement)
+1x		Raspberry Pi B+					https://www.sparkfun.com/products/12994 (base mère)
+2x		Regulateur 5v 5A				http://fr.farnell.com/texas-instruments/lm2677s-5-0-nopb/ic-step-down-regulator-to-263-7/dp/2147768 (1 pour la base mère +1 rab)
+4x		Regulateur 3.3v					http://fr.farnell.com/texas-instruments/lp3990mf-3-3-nopb/ic-voltage-regulator/dp/1685762 (1 voir 2 pour la base mère et probablement 1 caméra +1 rab)
+4x		Regulateur 3.3v (Emin=2.5v ??)	http://fr.farnell.com/zmdi/zspm4141ai1w33/v-reg-2-5-5-5v-0-2a-3-3v-0-5-8dfn/dp/2322445 (1 / capteur + 1 rab)
+5x		Atmel MCU ATMEGA128RFA1			http://fr.farnell.com/atmel/atmega128rfa1-zu/mcu-8bit-atmega-16mhz-qfn-64/dp/1841596 (1 pour la raspberry et 1 par capteur +1 rab)
+1x		Atmel JTAG						http://fr.farnell.com/atmel/atatmel-ice-basic/debogeur-pour-arm-avr-cable-comm/dp/2407172 (programmer et débuguer les ATMEGA)
+1x		Alimentation 5A 12v				http://fr.farnell.com/ideal-power/66ms-00120500-s01-v/alimentation-12v-5a-earthed-sortie/dp/2112013 (base mère)
+1x		Alimentation prise				http://fr.farnell.com/pro-elec/sh10193r/lead-euro-to-iec-black-2-5m/dp/1671744 (checker compatibilité avec alim du dessus)
+
+
+Panneau solaires
+Batteries variées
+
+Système de charge pour les batteries
+
+Capas, résistances, diodes, broches males/femelles pour les cartes
+
+
+
+/!\ EN PRENDRE UN PEU PLUS /!\
+
+Pour les composants annexes en utilisant le datasheet de : http://www.farnell.com/datasheets/1821158.pdf
+Pour un MCU:
+
+1x 	SMD balun				(2.4 GHz) http://fr.farnell.com/johanson-technology/2450fb15l0001e/filtre-balun-2-45ghz/dp/1885517
+	SMD balun / filter
+
+4x 1µF		capa (10% 16V) 	=> 50V     	http://fr.farnell.com/multicomp/mcmlr50v105kx7r/condensateur-1uf-50v-x7r-radial/dp/2112947
+4x 12pF		capa (5% 50V)			http://fr.farnell.com/multicomp/mc0805n120j500a2-54mm/capacitor-ceramic-12pf-50v-c0g/dp/1694188
+2x 22pF		capa (5% 50V)			http://fr.farnell.com/vishay/k220j15c0gf53l2/condensateur-22pf-50v/dp/1141760
+1x 0.47pF	capa 		On prend pas (optionnel)
+
+1x Crystal CX-4025 16 MHz or SX-4025 16 MHz  =>16MHz équivalent :   https://www.sparkfun.com/products/536
+
+1x Crystal 32kHz (32.768kHz)			http://fr.farnell.com/abracon/asflk-32-768khz-ljt/oscillator-32-768khz-smd-full-reel/dp/2368804
+
+
+1x antenna socket						http://fr.farnell.com/lprs/sma-connector/connecteur-sma-antenne/dp/2096223
+
+1x antenna								http://fr.farnell.com/rf-solutions/ant-24g-s21-sma/antenne-stubby-2-4ghz-w-sma/dp/2133443
+
+CAMERA:
+
+http://store.linksprite.com/linksprite-jpeg-color-camera-serial-uart-interface-ttl-level/
+http://www.electronics123.com/s.nl/it.A/id.3247/.f
+http://www.robotshop.com/en/vc0706-uart-vga-camera.html
+
+
+
+Panneau solaire :
+	> Capteurs : 	http://www.wattuneed.com/fr/panneaux-solaires-traditionnels/705-mini-panneau-solaire-06w.html?gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwWlLPpmAetQbMfS2-XUzvsBZ4a7wmVzBVf7hfJyNHlwaAtVw8P8HAQ
+					http://www.conrad.fr/ce/fr/product/191321/?utm_source=google-search-product&utm_medium=comparateur&utm_campaign=191321&WT.mc_id=comparateur-gsp-191321&LGWCODE=191321;43857;390&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwSC723LSSl_li9SkOv2xFqzb6B1s2_CX6hk1u-KYX0IaAhQ88P8HAQ
